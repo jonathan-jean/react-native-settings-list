@@ -121,6 +121,7 @@ class SettingsList extends React.Component {
               key={item.id}
               style={item.editableTextStyle ? item.editableTextStyle : styles.editableText}
               placeholder = {item.placeholder}
+              secureTextEntry = {item.secureTextEntry}
               onSubmitEditing={(text) => item.onSubmitEditing(text)}
               onChangeText={(text) => item.onTextChange(text)}
               value={item.value} />
