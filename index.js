@@ -124,6 +124,7 @@ class SettingsList extends React.Component {
               secureTextEntry = {item.secureTextEntry ? item.secureTextEntry : false}
               onSubmitEditing={(text) => item.onSubmitEditing(text)}
               onChangeText={(text) => item.onTextChange(text)}
+              onEndEditing={item.onEndEditing ? () => item.onEndEditing() : null}
               value={item.value} />
         : null
     ])
